@@ -37,7 +37,6 @@ public class NumberofDigitOne {
 
                 j /= 10;
 
-
             }
 
         }
