@@ -7,6 +7,8 @@ public class NextPermutation {
 
     public static void main(String[] args) {
 //Test Case => 1 5 8 4 7 6 5 3 1
+
+        //Question Link : https://leetcode.com/problems/next-permutation/
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
 
