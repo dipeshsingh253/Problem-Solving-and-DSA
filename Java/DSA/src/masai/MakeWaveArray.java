@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MakeWaveArray {
 
     public static void main(String[] args) {
-
+//Solution Link : https://www.geeksforgeeks.org/sort-array-wave-form-2/
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
@@ -27,7 +27,7 @@ public class MakeWaveArray {
 
         Arrays.sort(arr);
 
-        for (int i = 0; i < n; i = i + 2) {
+        for (int i = 0; i < n - 1; i = i + 2) {
 
             int temp = arr[i];
             arr[i] = arr[i + 1];
