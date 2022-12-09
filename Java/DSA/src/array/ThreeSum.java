@@ -7,6 +7,7 @@ public class ThreeSum {
 
     public static void main(String[] args) {
 
+        //Question Link : https://leetcode.com/problems/3sum/
 
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
@@ -23,6 +24,33 @@ public class ThreeSum {
 
         System.out.println(threeSumBruteForce(arr));
 
+    }
+
+
+    static void threeSumOptimized(int[] arr, int target) {
+        int n = arr.length;
+        Arrays.sort(arr);
+        for (int i = 0; i < n - 2; i++) {
+
+            int j = i + 1;
+            int k = n - 1;
+
+            while (j < k) {
+                int sum = arr[i] + arr[j] + arr[k];
+
+                if (sum == target) {
+                    System.out.println("Sum :" + sum + " , Target :" + target);
+                    j++;
+                    k--;
+                } else if (sum > target) {
+                    k--;
+                } else if (sum < target) {
+                    j++;
+                }
+
+            }
+
+        }
     }
 
     static List<List<Integer>> threeSumBruteForce(int[] nums) {
