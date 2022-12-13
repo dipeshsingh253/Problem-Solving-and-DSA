@@ -24,16 +24,16 @@ public class ForestSearch {
     }
 
 
-    static int woodCollected(int[] arr, int n, int m){
+    static int woodCollected(int[] arr, int n, int m) {
         int sum = 0;
 
-
+        return 0;
     }
 
-    public static int findHeight(int[] arr, int n, int k){
+    public static int findHeight(int[] arr, int n, int k) {
 
 
-
+        return 0;
     }
 
 }
