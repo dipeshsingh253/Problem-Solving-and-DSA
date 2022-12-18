@@ -8,7 +8,7 @@ public class SumTriangleFromArray {
 
     public static void main(String[] args) {
 
-//Question Link : https://www.geeksforgeeks.org/sum-triangle-from-array/
+    //Question Link : https://www.geeksforgeeks.org/sum-triangle-from-array/
 
 
         Scanner scanner = new Scanner(System.in);
