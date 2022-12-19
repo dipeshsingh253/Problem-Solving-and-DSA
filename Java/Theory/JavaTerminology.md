@@ -4,7 +4,7 @@
 
 => The JVM stands for Java Virtual Machine.
 => A programs execution is divided into three stages. A java program is written , compiled and then run.
-//Image Link : https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/621/original/JVM.png?1643379022
+<!--Image Link : https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/621/original/JVM.png?1643379022-->
 => As we can see in the image, first the JVM language classes are processed by the class loader subsystem which is
 responsible for loading , linking and initialization
 of the java classes. After being processed by the class loader, the generated files are stored in the JVM memory which
@@ -32,6 +32,36 @@ Java is a platform independent language thanks to this intermediate code.
 => The JRE installation on our computers allows us to run the Java Program , but we can not compile it. A browser ,JVM
 applet , and plugins are all included in JRE. JRE is required for
 a computer to run a JAVA program.
+
+## JDK
+
+==> When we learn about bytecode and JVM, we use the name JDK. As the name implies, it is a complete Java development
+kit that includes everything from the compiler to the Java Runtime Environment (JRE), debuggers, and documentation.
+==> n order to design, compile, and run the java application, we must first install JDK on our computer.
+==> JDK = JRE + Development Tools
+
+## Garbage Collection
+
+==> Garbage collection is the technique through which Java programs maintain their memory automatically
+==> Java programs are compiled into bytecode that may be executed by a Java Virtual Machine, or JVM. Objects are
+produced on the heap, which is a part of memory devoted to the Java application, while it runs on the JVM
+==> Some objects will become obsolete over time. To free up memory, the garbage collector detects these useless objects
+and deletes them.
+
+## Finalize Method
+
+==> It’s a method that the Garbage Collector calls shortly before deleting or destroying an object that’s suitable for
+Garbage Collection in order to do cleanup
+==> Clean-up activity entails de-allocating or closing the resources associated with that object, such as Database
+Connections and Network Connections
+==>  It’s important to remember that it’s not a reserved keyword. Garbage Collector destroys the object as soon as the
+finalise method completes
+==> The finalise method is found in the Object class and has the following syntax: protected void finalize throws
+Throwable{}
+==> Since the finalize function is contained in the Object class and Object is the superclass of all Java classes, the
+finalize method is available to all Java classes. As a result, the garbage collector may invoke the finalise function on
+any java object. We must override the finalize method present in the Object class to specify our own clean-up activities
+since the finalize function in the Object class has an empty implementation.
 
 
 
