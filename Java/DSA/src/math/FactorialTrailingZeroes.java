@@ -16,7 +16,6 @@ public class FactorialTrailingZeroes {
 
         System.out.println("Output :" + noOfTrailingZeroes(n));
 
-
     }
 
     static int noOfTrailingZeroes(int n) {
@@ -25,7 +24,7 @@ public class FactorialTrailingZeroes {
 
         while (n >= 5) {
 
-            int fact = n / 5;
+            int fact = n % 5;
             count += fact;
             n = n / 5;
 
