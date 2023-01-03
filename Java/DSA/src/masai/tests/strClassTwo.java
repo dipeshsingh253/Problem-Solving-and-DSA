@@ -2,7 +2,7 @@ package masai.tests;
 
 class strClassTwo implements stringFunctions{
   // implement all the function inherited by this class
-  public String print(String a,String b){
+  public void print(String a, String b){
       // This functions prints string a and string b on two different lines
        System.out.println(a);
         System.out.println(b);
@@ -47,9 +47,13 @@ class strClassTwo implements stringFunctions{
         
         
     }
-    
-    
-    
+
+    @Override
+    public int valueOfString(String a, String b) {
+        return 0;
+    }
+
+
     int vowelCount(String s){
       
       int cnt = 0;
