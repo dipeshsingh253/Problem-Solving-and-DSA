@@ -2,6 +2,10 @@ package oops;
 
 public class CustomStack {
 
+    /*
+    operations : push , pop, peek
+     */
+
     int[] arr;
     int size;
 
@@ -37,6 +41,10 @@ public class CustomStack {
         return arr[top];
     }
 
+    public int size(){
+        return top+1;
+    }
+
     private boolean isFull() {
         return top == size-1;
     }
@@ -46,7 +54,7 @@ public class CustomStack {
     }
 
     public static void main(String[] args) {
-        CustomStack customStack = new CustomStack(5);
+        CustomStack customStack = new CustomStack(8);
         customStack.push(5);
         customStack.push(4);
         customStack.push(3);
@@ -59,6 +67,8 @@ public class CustomStack {
         System.out.println(customStack.pop());
         System.out.println(customStack.pop());
         System.out.println(customStack.pop());
+//        System.out.println(customStack.pop());
+        System.out.println(customStack.size());
 
 
 
