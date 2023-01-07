@@ -2,75 +2,76 @@ package oops;
 
 public class CustomStack {
 
-    /*
-    operations : push , pop, peek
-     */
-
-    int[] arr;
     int size;
+    int[] arr;
+    int top;
 
-    int top = -1;
-
-    public CustomStack(int size) {
+    public CustomStack(int size){
         this.size = size;
-        this.arr = new int[size];
-    }
-
-    public boolean push(int ele){
-
-        if (isFull()) return false;
-
-        top++;
-        arr[top] = ele;
-        return true;
-    }
-
-
-    public int pop(){
-        if (isEmpty()) return -1;
-
-        int removed = arr[top];
-        top--;
-
-        return removed;
-    }
-
-    public int peek(){
-        if (isEmpty()) return -1;
-
-        return arr[top];
+        arr = new int[size];
+        top = -1;
     }
 
     public int size(){
         return top+1;
     }
 
-    private boolean isFull() {
-        return top == size-1;
-    }
-
-    private boolean isEmpty() {
+    public boolean isEmpty(){
         return top == -1;
     }
 
-    public static void main(String[] args) {
-        CustomStack customStack = new CustomStack(8);
+    public boolean isFull(){
+        return top == size-1;
+    }
+
+    public void push(int data) throws Exception {
+
+        if(isFull()){
+            throw new Exception("Stack is full");
+        }
+
+        arr[++top] = data;
+
+    }
+
+    public int pop() throws Exception {
+
+        if(isEmpty()) throw new Exception("Stack is empty");
+
+        int popped = arr[top];
+        arr[top--] = Integer.MIN_VALUE;
+
+        return popped;
+
+    }
+
+    public int peek() throws Exception {
+        if(isEmpty()) throw new Exception("Stack is empty");
+
+        return arr[top];
+    }
+
+
+    public static void main(String[] args) throws Exception {
+
+        CustomStack customStack = new CustomStack(5);
+
         customStack.push(5);
         customStack.push(4);
         customStack.push(3);
         customStack.push(2);
         customStack.push(1);
-        customStack.push(10);
+//        customStack.push(0);
 
+        System.out.println(customStack.size());
+        System.out.println(customStack.peek());
         System.out.println(customStack.pop());
-        System.out.println(customStack.pop());
-        System.out.println(customStack.pop());
-        System.out.println(customStack.pop());
-        System.out.println(customStack.pop());
-//        System.out.println(customStack.pop());
+        System.out.println(customStack.peek());
         System.out.println(customStack.size());
 
 
 
     }
+
+
 }
