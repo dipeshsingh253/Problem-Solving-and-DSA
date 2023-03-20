@@ -35,7 +35,7 @@ public class FindMissingNumber {
     public static void main(String[] args) {
         // Question Link => https://www.geeksforgeeks.org/find-the-missing-number/ , https://leetcode.com/problems/missing-number/
 
-        // Solution => https://www.geeksforgeeks.org/find-the-missing-number-in-a-sorted-array/
+        // CanPlaceFlower => https://www.geeksforgeeks.org/find-the-missing-number-in-a-sorted-array/
 
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();

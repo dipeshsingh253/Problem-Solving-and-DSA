@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MakeWaveArray {
 
     public static void main(String[] args) {
-//Solution Link : https://www.geeksforgeeks.org/sort-array-wave-form-2/
+//CanPlaceFlower Link : https://www.geeksforgeeks.org/sort-array-wave-form-2/
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();

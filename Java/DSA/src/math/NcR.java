@@ -7,7 +7,7 @@ public class NcR {
     public static void main(String[] args) {
 
 
-        //Solution : https://www.geeksforgeeks.org/program-to-calculate-the-value-of-ncr-efficiently/
+        //CanPlaceFlower : https://www.geeksforgeeks.org/program-to-calculate-the-value-of-ncr-efficiently/
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();

@@ -25,7 +25,7 @@ public class ProductOfArrayExceptSelf {
     }
 
     static void productArrayExceptSelf(int n, int[] arr) {
-//Solution Explanation  => https://www.enjoyalgorithms.com/blog/product-of-array-except-self
+//CanPlaceFlower Explanation  => https://www.enjoyalgorithms.com/blog/product-of-array-except-self
         int[] pref = new int[n];
         pref[0] = 1;
 
