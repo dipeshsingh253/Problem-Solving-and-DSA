@@ -2,6 +2,10 @@
 I love to study Data Structure and Algorithms. I push coding question that I have solved on different coding platforms.
 
 
+# Note : First learn data structures following a proper roadmap and then go for Algorithms.
+Even though we read both words together Data Structures and Algorithms still they both are not same you will have to prepare for them separately.
+
+
 # Roadmaps :
 
 https://www.codechef.com/certification/data-structures-and-algorithms/prepare
