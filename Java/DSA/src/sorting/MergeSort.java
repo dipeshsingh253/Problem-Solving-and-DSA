@@ -1,4 +1,4 @@
-package sorting;
+// package sorting;
 
 public class MergeSort {
 
@@ -52,6 +52,11 @@ public class MergeSort {
             }
         }
 
+        while(i < ln)
+            nums[k++] = lnums[i++];
+
+        while(j < rn)
+            nums[k++] = rnums[j++];
     }
 
     public static void printArray(int[] array){
