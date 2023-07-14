@@ -1,4 +1,4 @@
-// package sorting;
+ package sorting;
 
 public class MergeSort {
 
@@ -25,12 +25,16 @@ public class MergeSort {
 
     public static void merge(int[]nums,int l,int m,int r){
 
+        // finding number of elements in sub array : last index - ini index + 1;
         int ln = m - l + 1;
         int rn = r - m;
 
+
+        //  creating separate sub arrays
         int[] lnums = new int[ln];
         int[] rnums = new int[rn];
 
+        // filling proper values in sub array
         for(int i=0;i<ln;i++){
             lnums[i] = nums[l + i];
         }
@@ -44,6 +48,7 @@ public class MergeSort {
         int j = 0;
         int k = l;
 
+        // logic to merge two array in sorted order
         while(i < ln && j < rn){
             if(lnums[i] < rnums[j]){
                 nums[k++] = lnums[i++];
@@ -52,6 +57,7 @@ public class MergeSort {
             }
         }
 
+        // placing remaining values
         while(i < ln)
             nums[k++] = lnums[i++];
 
