@@ -28,3 +28,21 @@ https://ducmanhphan.github.io/
 
 # Question Banks :
 https://aerosol-can.github.io/Data-Structures-and-Algorithms/
+
+
+# Topics completed :
+
+## DS :
+
+- String
+- List
+- Array
+- LinkedList
+- Stack and Queue
+- Tree
+- BST
+
+## Algo :
+
+- sorting
+- searching
