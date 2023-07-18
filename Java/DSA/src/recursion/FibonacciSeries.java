@@ -48,10 +48,10 @@ public class FibonacciSeries {
 /**
  * 5 => 4 & 3
  *     4 => 3 & 2  : 2 => 1 & 0
- *         3 => 2 & 1
- *             2 => 1 & 0
- *     3 => 2 & 1
- *         2 => 1 & 0
+ *         3 => 2 & 1 : 1 => 1
+ *             2 => 1 & 0 : 1 => 1 && 0 => 0  
+ *     3 => 2 & 1 : 1 => 1
+ *         2 => 1 & 0 : 1 => 1 && 0 => 0
  *
  *  So expected output for printFS(int n) method is :
  *  Output :
