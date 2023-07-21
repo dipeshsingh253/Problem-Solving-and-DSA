@@ -46,3 +46,11 @@ https://aerosol-can.github.io/Data-Structures-and-Algorithms/
 
 - sorting
 - searching
+
+## NOTE : I have alredy completed data structues and algo in java lang but now as a good developer we should understand how these ds works generally for any language. For that follow below resources.
+
+## Resources
+
+https://www.youtube.com/playlist?list=PLG9aCp4uE-s334Pe8qACh32TdxsMKqDRU
+
+https://youtube.com/playlist?list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa
