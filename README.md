@@ -54,3 +54,8 @@ https://aerosol-can.github.io/Data-Structures-and-Algorithms/
 https://www.youtube.com/playlist?list=PLG9aCp4uE-s334Pe8qACh32TdxsMKqDRU
 
 https://youtube.com/playlist?list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa
+
+
+## Books
+
+DSA made easy by Narsimha K.
