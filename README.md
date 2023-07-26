@@ -59,3 +59,5 @@ https://youtube.com/playlist?list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa
 ## Books
 
 DSA made easy by Narsimha K.
+DSA made easy in java
+Java 8 for dummies 
